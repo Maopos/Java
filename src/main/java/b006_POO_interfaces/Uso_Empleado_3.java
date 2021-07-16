@@ -36,6 +36,7 @@ public class Uso_Empleado_3 {
 		Empleado_3 jefe_03 = new Jefe_3("Sandra Riascos", 6, 75000, 2018, 12, 24);
 		nomina[6] = jefe_03;
 		
+		@SuppressWarnings("rawtypes")
 		Comparable empleado_05 = new Empleado_3("Raul Arciniegas", 7, 87000, 2017, 8, 10);
 		nomina[7] = (Empleado_3)empleado_05;
 		
@@ -51,7 +52,7 @@ public class Uso_Empleado_3 {
 		
 		Arrays.sort(nomina);
 		
-		int contador = 1001;
+		
 		for (Empleado_3 i: nomina) {
 			i.setAumentoSueldo(6);
 			System.out.print("Empleado " + i.getId() + " " + i.getNombre() + ", ");
@@ -59,8 +60,7 @@ public class Uso_Empleado_3 {
 			System.out.printf("Actualmente devenga: $%,1.2f", i.getSueldo());
 			
 			
-			System.out.println();
-			contador++;
+			System.out.println();		
 		}
 		
 	}
@@ -87,7 +87,7 @@ class Empleado_3 implements Comparable{
 		
 	}
 	
-	public Empleado_3(String nombre) { 													// Constructor 2
+	public Empleado_3(String nombre) { 															// Constructor 2
 		
 		this(nombre, 101, 30000, 2000, 1, 1);
 		
@@ -139,7 +139,7 @@ class Jefe_3 extends Empleado_3 implements Jefes{
 	
 	public Jefe_3(String nombre, int id, double sueldo, int año, int mes, int dia) {
 		
-		super(nombre, id, sueldo, año, mes, dia); 									// Llama al metodo constructor de la clase padre
+		super(nombre, id, sueldo, año, mes, dia); 										// Llama al metodo constructor de la clase padre
 		
 	}
 	
