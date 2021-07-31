@@ -13,7 +13,6 @@ public class Nuevo_proyecto {
 		double interesSimple = pMonto * (pInteres/100) * pPeriodo;
 		
 		return interesSimple;
-		
 	}
 	
 	

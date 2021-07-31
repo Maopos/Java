@@ -13,7 +13,8 @@ public class NuevoProyecto {
 	}
    
 	public NuevoProyecto(){
-	    this(0, 0, 0);
+		this(0, 0, 0);
+		
 	}
 	
 	public double calcularInteresSimple() {

@@ -70,7 +70,6 @@ class Dispositivo {
 	public Dispositivo(Double precioBase, Integer peso, char consumoW){
 		this.precioBase = precioBase;
 		this.peso = peso;
-		this.consumoW = consumoW;
 		
 		comprobarconsumoW(consumoW); 
 	}
@@ -81,7 +80,7 @@ class Dispositivo {
 	
 	public void comprobarconsumoW(char consumoW){
 		
-		if(consumoW > 10){ 
+		if(consumoW >= 2 && consumoW <= 20){ 
 			
 			this.consumoW = consumoW;
 		
